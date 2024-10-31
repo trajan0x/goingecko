@@ -3,13 +3,14 @@ package coins
 import "github.com/JulianToledano/goingecko/types"
 
 type CoinID struct {
-	ID                 string   `json:"id"`
-	Symbol             string   `json:"symbol"`
-	Name               string   `json:"name"`
-	AssetPlatformID    string   `json:"asset_platform_id"`
-	BlockTimeInMinutes int      `json:"block_time_in_minutes"`
-	HashingAlgorithm   string   `json:"hashing_algorithm"`
-	Categories         []string `json:"categories"`
+	ID                 string            `json:"id"`
+	Symbol             string            `json:"symbol"`
+	Name               string            `json:"name"`
+	AssetPlatformID    string            `json:"asset_platform_id"`
+	BlockTimeInMinutes int               `json:"block_time_in_minutes"`
+	HashingAlgorithm   string            `json:"hashing_algorithm"`
+	Categories         []string          `json:"categories"`
+	Platforms          map[string]string `json:"platforms"`
 	// PublicNotice ¿? `json:"public_notice"`
 	// AdditionalNotices ¿? `json:"public_notices"`
 	Localization              types.Localization        `json:"localization"`
